@@ -1,0 +1,268 @@
+@font-face {
+    font-family: 'sprice';
+    src: url(FONTS/SpicyRice-Regular.ttf) format('truetype');
+}
+@font-face {
+    font-family: 'ubuntu';
+    src: url(FONTS/Ubuntu-Regular.ttf ) format('truetype');
+}
+@font-face {
+    font-family: 'merienda';
+    src: url(assets/fonts/Figtree-Italic-VariableFont_wght.ttf) format('truetype');
+}
+
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+  
+    
+}
+
+
+body{
+    height: 100vh;
+    
+}
+.mt{
+   /* background-color: rgb(141, 132, 132); */
+   background-image: url(./Family.jpg);
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+   /* opacity: 0.2; */
+   height: 90vh;
+   position: relative;
+}
+.lolo{
+    width: 100%;
+    height: 40px;
+    background-color: whitesmoke;
+    color: brown;
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    
+    
+    
+}
+.lolo marquee{
+
+   
+}
+
+
+.hold{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3rem;
+    justify-content: space-around;
+
+   
+
+}
+.content{
+    flex: 1;
+    color: white;
+    font-family: 'Ubuntu';
+}
+.big img{
+    width: 100%;
+    min-width: 350px;
+    height: 350px;
+    object-fit: cover;
+    vertical-align: middle;
+    border-radius: 100%;
+}
+
+img{ 
+    height: 200px;
+    min-width: 200px;
+    width: auto;
+}
+
+.container{
+    padding-top: 5%;
+    padding-inline: 5%;
+}
+
+h1{
+    color: brown;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    font-family: 'sprice', sans-serif;
+    font-size:70px;
+    
+
+}
+h4{
+    color: goldenrod;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    font-family: 'merienda';
+    font-size: 50px; 
+
+}
+
+p{
+    font-size: 20px;
+}
+.pk{
+    width:100% ;
+    height: 10vh;
+    background-color: rgb(252, 183, 194);;
+}
+.image{
+    padding-block: 10px;
+}
+
+.mt::before{
+    content: "";
+    z-index:1;
+    position: absolute;
+    background-color: rgba(0,0, 0, 0.7);
+    height: 100%;
+    width: 100%;
+}
+.hold{
+    position: relative;
+    z-index: 2;
+}
+
+
+.medi{
+    width: 350px;
+    height: 350px;
+    border-radius: 10px;
+    /* margin-bottom: 10px;    */
+}
+.slider-images{
+    display: grid;
+    grid-template-columns: 0fr 0fr 0fr;
+    gap: 20px;
+    margin-left: 130px;
+}
+footer{
+    margin-top: 20px;
+    width:100% ;
+    height: 5vh;
+    background-color: rgb(252, 183, 194);
+    
+}
+.james{
+    text-align: center;
+    padding-top: 8px;
+}
+
+
+/* MEDIA RESPONSIVENESS */
+@media (max-width: 550px) {
+    .mt{
+        height: 90vh;
+        background-image: url(./Family.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size:cover;
+    }
+
+    .big img{
+        padding-top: 20px;
+        width: 100%;
+        min-width: 300px;
+        height: 300px;
+        object-fit: cover;
+        vertical-align: middle;
+        border-radius: 100%;
+    }
+
+.hold{
+
+}
+
+h1{
+    color: brown;
+    font-family: 'sprice', sans-serif;
+    font-size:50px;
+    margin-top: -20px;
+}
+
+.gt{
+    font-size: 80px;
+    
+}
+
+.content{
+    color: white;
+    font-family: 'Ubuntu';
+}
+
+p{
+    padding-top: 42px;
+    
+}
+
+.pk{
+    width:100% ;
+    height: 40vh;
+    background-color: rgb(252, 183, 194);
+    margin-bottom: 20px;
+}
+.img-container{
+    margin: 20px 20px ;
+    
+
+}
+.cl2{
+    color: goldenrod;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    font-family: 'merienda';
+    font-size: 35px; 
+}
+
+.slider-images{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+   
+}
+
+
+/* slide Animation */
+/* @-webkit-keyframes slide_animation{
+    0%{left:0px;}
+    10%{left:0px;}
+    20%{left:1200px;}
+    30%{left:1200px;}
+    40%{left:2400px;}
+    50%{left:2400px;}
+    60%{left:1200px;}
+    70%{left:1200px;}
+    80%{left:0px;}
+    90%{left:0px;}
+    100%{left:0px;}
+}
+
+.slide-images{
+    width: 1500px;
+    height: 800px;
+    margin: 0 0 0 -2400px;
+    position: relative;
+    -webkit-animation-name:slide_animation;
+    -webkit-animation-duration:23s ;
+    -webkit-animation-iteration-count:infinite ;
+    -webkit-animation-direction:alternate ;
+    -webkit-animation-play-state: running;
+}
+
+.img-container{
+    height: 300px;
+    width: 1200px;
+    position: relative;
+    float: left;
+} */
